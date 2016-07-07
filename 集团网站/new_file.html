@@ -1,0 +1,81 @@
+<!DOCTYPE >
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>高校学生在线学习网站</title>
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+		<script language="javascript" type="text/javascript">
+			$(function() {
+				$('#biao UL LI').mouseover(function() {
+					$(this).css("backgroundColor", "yellow");
+				}).mouseout(function() {
+					$(this).css("backgroundColor", "");
+				});
+			})
+			var curIndex = 0;
+			var timeInterval = 3000;
+			var arr = new Array();
+			arr[0] = "n1.jpg";
+			arr[1] = "n2.jpg";
+			arr[2] = "n3.jpg";
+			arr[3] = "n4.jpg";
+			arr[4] = "n5.jpg";
+			arr[5] = "n6.jpg";
+			setInterval(changeImg, timeInterval);
+
+			function changeImg() {
+				var obj = document.getElementById("showpic");
+				if (curIndex == arr.length - 1) {
+					curIndex = 0;
+				} else {
+					curIndex += 1;
+				}
+				obj.src = "image/" + arr[curIndex];
+			}
+		</script>
+	</head>
+	<body >
+			<div id="header_wrapper">
+				<header>
+					<div class="container">
+						<div id="logo">
+							<h1><a href="index.html"> <img src="images/logo.jpg" alt="集团首页"></a></h1>
+						</div>
+						<div id="search">
+							<form>
+								<input type="text" placeholder="搜索其实很简单"><input type="submit" value="搜索">
+
+							</form>
+						</div>
+					</div>
+					<div id="nav">
+						<nav class="container">
+							<ul>
+								<li class="on"><a href="index.html">集团首页</a></li>
+								<li>
+
+									<a href="list.html">产品列表</a></li>
+								<li>
+
+									<a href="picList.html">新闻列表</a></li>
+								<li>
+
+									<a href="content.html">内容首页</a></li>
+								<li>
+
+									<a href="about.html">关于集团</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
+        </div>
+		
+
+	</body>
+
+</html>

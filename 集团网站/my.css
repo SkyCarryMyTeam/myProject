@@ -1,0 +1,70 @@
+﻿/*头部样式*/
+div#logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 730px;
+    /*-moz-box-sizing:content-box;*/
+    /*-weblit-box-sizing: border-box;*/
+}
+
+div#search {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 55px;
+    width: 258px;
+    /*-moz-box-sizing:content-box;*/
+    /*-weblit-box-sizing: border-box;*/
+}
+
+input[type="text"] {
+    font-family: "微软雅黑";
+    font-weight: lighter;
+    background-color: #f3f3f3;
+    border: solid 1px #ccc;
+    font-size: 20px;
+    line-height: 40px;
+    width: 160px;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[type="submit"] {
+    font-family: "微软雅黑";
+    font-weight: lighter;
+    background-color: #3598db;
+    border: solid 1px #3598db;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+}
+
+div#nav {
+    background-color: #3598db;
+    height: 60px;
+}
+
+div#nav nav li {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 10px;
+    border-right: solid 1px #2f89c5;
+    -webkit-transition: background 1s linear;
+    -moz-transition: background 1s linear;
+    -ms-transition: background 1s linear;
+    -o-transition: background 1s linear;
+    transition: background 1s linear;
+}
+
+div#nav nav li.on, div#nav nav li:hover {
+
+    background-color: #2f89c5;
+}
+
+div#nav nav a {
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        div{
+            background-color: #3598DC;
+            width: 600px;
+            height: 380px;
+            margin: 250px auto;
+
+        }
+
+
+
+        div:hover {
+            -webkit-animation-name: piclist;
+            -webkit-animation-duration: 50s;
+            -webkit-animation-timing-function: linear;
+
+        }
+
+        @-webkit-keyframes piclist {
+            0% {
+              background: #3598DC;
+               
+            }
+            10% {
+                background-image: url("images/car2.jpg") ;
+               
+            }
+            20% {
+                background-image: url("images/car3.jpg") ;
+               
+            }
+            30% {
+                background-image: url("images/car4.jpg") ;
+                
+            }
+            40% {
+                background-image: url("images/car5.jpg") ;
+               
+            }
+
+            50% {
+                background-image: url("images/car6.jpg") ;
+                
+
+            }
+            60% {
+                background-image: url("images/car7.jpg") ;
+               
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    
+</div>
+</body>
+</html>
